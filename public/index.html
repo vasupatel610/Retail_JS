@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Retail Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                <h1>Fashion Search</h1>
+            </div>
+            <p class="subtitle">AI-Powered Semantic Fashion Discovery</p>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search for fashion items... (e.g., 'red summer dress', 'comfortable running shoes')">
+                    <button id="searchBtn" class="search-button">
+                        <span>Search</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <!-- Search Options -->
+                <div class="search-options">
+                    <div class="option-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="hybridSearch" checked>
+                            <span class="slider"></span>
+                            <span class="label">Hybrid Search</span>
+                        </label>
+                        <small>Combines semantic understanding with keyword matching</small>
+                    </div>
+                    
+                    <div class="option-group">
+                        <label for="topK">Results: </label>
+                        <select id="topK">
+                            <option value="5">5</option>
+                            <option value="10" selected>10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Search Suggestions -->
+            <div class="quick-searches">
+                <span class="quick-label">Try searching for:</span>
+                <div class="quick-tags">
+                    <button class="quick-tag" data-query="elegant evening dress">Evening Dress</button>
+                    <button class="quick-tag" data-query="casual summer outfit">Summer Casual</button>
+                    <button class="quick-tag" data-query="professional business attire">Business Wear</button>
+                    <button class="quick-tag" data-query="comfortable athletic wear">Sportswear</button>
+                    <button class="quick-tag" data-query="trendy accessories">Accessories</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading State -->
+        <div id="loadingState" class="loading-state hidden">
+            <div class="spinner"></div>
+            <p>Searching through our fashion collection...</p>
+        </div>
+
+        <!-- Results Section -->
+        <section id="resultsSection" class="results-section hidden">
+            <div class="results-header">
+                <h2 id="resultsTitle">Search Results</h2>
+                <div class="results-stats">
+                    <span id="resultsCount">0 items found</span>
+                    <span id="searchTime"></span>
+                </div>
+            </div>
+            
+            <div id="resultsContainer" class="results-container">
+                <!-- Results will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- No Results State -->
+        <div id="noResults" class="no-results hidden">
+            <i class="fas fa-search-minus"></i>
+            <h3>No items found</h3>
+            <p>Try adjusting your search terms or browse our suggested categories</p>
+            <div class="suggested-searches">
+                <button class="quick-tag" data-query="dress">Dresses</button>
+                <button class="quick-tag" data-query="shirt">Shirts</button>
+                <button class="quick-tag" data-query="shoes">Shoes</button>
+                <button class="quick-tag" data-query="accessories">Accessories</button>
+            </div>
+        </div>
+
+        <!-- Error State -->
+        <div id="errorState" class="error-state hidden">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>Oops! Something went wrong</h3>
+            <p id="errorMessage">Please try again later</p>
+            <button id="retryBtn" class="retry-button">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Product Modal (for detailed view) -->
+    <div id="productModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div id="modalBody">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

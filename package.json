@@ -1,0 +1,17 @@
+{
+"name": "fashion-semantic-search",
+"version": "1.0.0",
+"type": "module",
+"description": "SBERT (MiniLM) semantic + hybrid search and recommendations in Node.js using transformers.js",
+"main": "server.js",
+"scripts": {
+"start": "node server.js"
+},
+"dependencies": {
+"@xenova/transformers": "^2.16.1",
+"cors": "^2.8.5",
+"csv-parser": "^3.0.0",
+"express": "^4.19.2",
+"papaparse": "^5.4.1"
+}
+}

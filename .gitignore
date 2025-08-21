@@ -1,0 +1,9 @@
+node_modules/
+.hf_cache/
+.cache/
+.DS_Store
+
+
+# Data & cache files
+/data/embeddings.json
+/data/doc_hash.txt
