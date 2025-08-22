@@ -16,7 +16,7 @@ async function quickTest() {
     
     // Test heuristic recommendations
     console.log('🔬 Testing Heuristic Rule-Based Expansion...');
-    const response = await fetch('http://localhost:3000/recommend/heuristic', {
+    const response = await fetch('https://retail-js.vercel.app/recommend/heuristic', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
