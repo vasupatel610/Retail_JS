@@ -1,5 +1,3 @@
-
-
 export const colorMap = {
 navy: 'blue', cobalt: 'blue', azure: 'blue', sky: 'blue', indigo: 'blue',
 crimson: 'red', scarlet: 'red', maroon: 'red',

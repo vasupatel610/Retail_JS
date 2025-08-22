@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Evaluation</title>
+</head>
+<body>
+    <h1>Debug Evaluation Button</h1>
+    
+    <input type="text" id="searchInput" value="test query" />
+    <button id="evaluateBtn">Evaluate Quality</button>
+    <button id="comprehensiveBtn">Comprehensive Test</button>
+    
+    <div id="output"></div>
+    
+    <script>
+        console.log('Debug page loaded');
+        
+        const evaluateBtn = document.getElementById('evaluateBtn');
+        const comprehensiveBtn = document.getElementById('comprehensiveBtn');
+        const searchInput = document.getElementById('searchInput');
+        const output = document.getElementById('output');
+        
+        console.log('Buttons found:', { evaluateBtn, comprehensiveBtn });
+        
+        evaluateBtn.addEventListener('click', () => {
+            console.log('Evaluate button clicked!');
+            output.innerHTML = '<p>Evaluate button clicked!</p>';
+            
+            // Test the API call
+            fetch('http://localhost:3000/evaluate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    query: searchInput.value,
+                    topK: 5,
+                    method: 'linear',
+                    linearMethod: 'combined'
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('API response:', data);
+                output.innerHTML += '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            })
+            .catch(error => {
+                console.error('API error:', error);
+                output.innerHTML += '<p style="color: red;">Error: ' + error.message + '</p>';
+            });
+        });
+        
+        comprehensiveBtn.addEventListener('click', () => {
+            console.log('Comprehensive button clicked!');
+            output.innerHTML = '<p>Comprehensive button clicked!</p>';
+        });
+    </script>
+</body>
+</html>

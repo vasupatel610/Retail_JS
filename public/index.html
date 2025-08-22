@@ -34,12 +34,24 @@
                 <!-- Search Options -->
                 <div class="search-options">
                     <div class="option-group">
-                        <label class="toggle-switch">
-                            <input type="checkbox" id="hybridSearch" checked>
-                            <span class="slider"></span>
-                            <span class="label">Hybrid Search</span>
-                        </label>
-                        <small>Combines semantic understanding with keyword matching</small>
+                        <label for="searchMethod">Search Method:</label>
+                        <select id="searchMethod">
+                            <option value="adaptive" selected>Adaptive (Auto)</option>
+                            <option value="hybrid">Hybrid (SBERT + Linear)</option>
+                            <option value="semantic">Semantic Only (SBERT)</option>
+                            <option value="linear">Linear Only (Fast)</option>
+                        </select>
+                        <small>Choose the best search strategy for your query</small>
+                    </div>
+                    
+                    <div class="option-group">
+                        <label for="linearMethod">Linear Method:</label>
+                        <select id="linearMethod">
+                            <option value="combined" selected>Combined (TF-IDF + BM25 + Fuzzy)</option>
+                            <option value="tfidf">TF-IDF Only</option>
+                            <option value="bm25">BM25 Only</option>
+                            <option value="fuzzy">Fuzzy Only</option>
+                        </select>
                     </div>
                     
                     <div class="option-group">
@@ -49,7 +61,57 @@
                             <option value="10" selected>10</option>
                             <option value="15">15</option>
                             <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="100">100</option>
                         </select>
+                    </div>
+                    
+                    <div class="option-group">
+                        <button id="compareBtn" class="compare-button">
+                            <i class="fas fa-chart-line"></i>
+                            Compare Methods
+                        </button>
+                        <small>Test performance of all search methods</small>
+                    </div>
+                    
+                    <div class="option-group">
+                        <button id="evaluateBtn" class="evaluate-button" onclick="alert('Button clicked!'); console.log('Button clicked via onclick!')">
+                            <i class="fas fa-microscope"></i>
+                            Evaluate Quality
+                        </button>
+                        <small>Measure precision, recall & quality metrics</small>
+                    </div>
+                    
+                    <div class="option-group">
+                        <button id="comprehensiveBtn" class="comprehensive-button">
+                            <i class="fas fa-chart-bar"></i>
+                            Comprehensive Test
+                        </button>
+                        <small>Full evaluation across all methods & queries</small>
+                    </div>
+                    
+                    <div class="option-group">
+                        <button id="heuristicBtn" class="heuristic-button">
+                            <i class="fas fa-magic"></i>
+                            Heuristic Recommendations
+                        </button>
+                        <small>Multi-factor rule-based product recommendations</small>
+                    </div>
+                    
+                    <div class="option-group">
+                        <button id="heuristicCustomBtn" class="heuristic-custom-button">
+                            <i class="fas fa-sliders-h"></i>
+                            Custom Heuristic
+                        </button>
+                        <small>Customize heuristic scoring weights</small>
+                    </div>
+                    
+                    <div class="option-group">
+                        <button id="heuristicAnalysisBtn" class="heuristic-analysis-button">
+                            <i class="fas fa-microscope"></i>
+                            Heuristic Analysis
+                        </button>
+                        <small>Analyze heuristic set distribution & scoring</small>
                     </div>
                 </div>
             </div>
@@ -88,6 +150,158 @@
             </div>
         </section>
 
+        <!-- Performance Comparison Section -->
+        <section id="comparisonSection" class="comparison-section hidden">
+            <div class="comparison-header">
+                <h2>Search Method Performance Comparison</h2>
+                <p>Compare the speed and results of different search approaches</p>
+            </div>
+            
+            <div class="performance-grid">
+                <div class="perf-card" id="linearPerf">
+                    <h3>Linear Search</h3>
+                    <div class="perf-stats">
+                        <span class="time">0ms</span>
+                        <span class="results">0 results</span>
+                    </div>
+                    <div class="perf-bar">
+                        <div class="perf-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+                
+                <div class="perf-card" id="semanticPerf">
+                    <h3>Semantic Search</h3>
+                    <div class="perf-stats">
+                        <span class="time">0ms</span>
+                        <span class="results">0 results</span>
+                    </div>
+                    <div class="perf-bar">
+                        <div class="perf-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+                
+                <div class="perf-card" id="hybridPerf">
+                    <h3>Hybrid Search</h3>
+                    <div class="perf-stats">
+                        <span class="time">0ms</span>
+                        <span class="results">0 results</span>
+                    </div>
+                    <div class="perf-bar">
+                        <div class="perf-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+                
+                <div class="perf-card" id="adaptivePerf">
+                    <h3>Adaptive Search</h3>
+                    <div class="perf-stats">
+                        <span class="time">0ms</span>
+                        <span class="results">0 results</span>
+                    </div>
+                    <div class="perf-bar">
+                        <div class="perf-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comparison-results" id="comparisonResults">
+                <!-- Comparison results will be shown here -->
+            </div>
+        </section>
+
+        <!-- Quality Evaluation Section -->
+        <section id="evaluationSection" class="evaluation-section hidden">
+            <div class="evaluation-header">
+                <h2>Search Quality Evaluation</h2>
+                <p>Measure precision, recall, and other quality metrics for search results</p>
+            </div>
+            
+            <div class="evaluation-metrics">
+                <div class="metric-card">
+                    <h3>Precision</h3>
+                    <div class="metric-value" id="precisionValue">-</div>
+                    <div class="metric-description">Relevant results / Total results</div>
+                </div>
+                
+                <div class="metric-card">
+                    <h3>Recall</h3>
+                    <div class="metric-value" id="recallValue">-</div>
+                    <div class="metric-description">Relevant results / Total relevant</div>
+                </div>
+                
+                <div class="metric-card">
+                    <h3>F1 Score</h3>
+                    <div class="metric-value" id="f1Value">-</div>
+                    <div class="metric-description">Harmonic mean of precision & recall</div>
+                </div>
+                
+                <div class="metric-card">
+                    <h3>MAP</h3>
+                    <div class="metric-value" id="mapValue">-</div>
+                    <div class="metric-description">Mean Average Precision</div>
+                </div>
+                
+                <div class="metric-card">
+                    <h3>nDCG</h3>
+                    <div class="metric-value" id="ndcgValue">-</div>
+                    <div class="metric-description">Normalized Discounted Cumulative Gain</div>
+                </div>
+                
+                <div class="metric-card">
+                    <h3>Latency</h3>
+                    <div class="metric-value" id="latencyValue">-</div>
+                    <div class="metric-description">Search response time</div>
+                </div>
+            </div>
+            
+            <div class="evaluation-details" id="evaluationDetails">
+                <!-- Evaluation details will be shown here -->
+            </div>
+        </section>
+
+        <!-- Heuristic Recommendation Section -->
+        <section id="heuristicSection" class="heuristic-section hidden">
+            <div class="heuristic-header">
+                <h2>Heuristic Rule-Based Recommendations</h2>
+                <p>Multi-factor scoring with semantic similarity, category, color, and brand matching</p>
+            </div>
+            
+            <div class="heuristic-metadata" id="heuristicMetadata">
+                <!-- Metadata will be shown here -->
+            </div>
+            
+            <div class="heuristic-results" id="heuristicResults">
+                <!-- Heuristic results will be shown here -->
+            </div>
+        </section>
+
+        <!-- Heuristic Analysis Section -->
+        <section id="heuristicAnalysisSection" class="heuristic-analysis-section hidden">
+            <div class="heuristic-analysis-header">
+                <h2>Heuristic Recommendation Analysis</h2>
+                <p>Detailed breakdown of recommendation sets and scoring distribution</p>
+            </div>
+            
+            <div class="heuristic-analysis-results" id="heuristicAnalysisResults">
+                <!-- Analysis results will be shown here -->
+            </div>
+        </section>
+
+        <!-- Comprehensive Evaluation Section -->
+        <section id="comprehensiveSection" class="comprehensive-section hidden">
+            <div class="comprehensive-header">
+                <h2>Comprehensive Search Evaluation</h2>
+                <p>Full evaluation across all search methods and test queries</p>
+            </div>
+            
+            <div class="comprehensive-summary" id="comprehensiveSummary">
+                <!-- Summary will be shown here -->
+            </div>
+            
+            <div class="comprehensive-results" id="comprehensiveResults">
+                <!-- Detailed results will be shown here -->
+            </div>
+        </section>
+
         <!-- No Results State -->
         <div id="noResults" class="no-results hidden">
             <i class="fas fa-search-minus"></i>
@@ -121,5 +335,15 @@
     </div>
 
     <script src="app.js"></script>
+    <script>
+        // Simple test to see if the button is found
+        console.log('HTML loaded, testing button...');
+        const testBtn = document.getElementById('evaluateBtn');
+        console.log('evaluateBtn found:', testBtn);
+        if (testBtn) {
+            console.log('Button text:', testBtn.textContent);
+            console.log('Button visible:', testBtn.offsetWidth > 0 && testBtn.offsetHeight > 0);
+        }
+    </script>
 </body>
 </html>

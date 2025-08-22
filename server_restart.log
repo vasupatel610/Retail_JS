@@ -1,0 +1,725 @@
+✅ Enhanced Fashion Recommendation Server running at http://localhost:3000
+🔬 Heuristic Rule-Based Expansion available at /recommend/heuristic
+⚙️  Custom weights tuning available at /recommend/heuristic/custom
+📊 Product analysis available at /recommend/analyze
+🎯 Formula: α*(SBERT) + β*(category) + γ*(color) + δ*(brand)
+✅ Loaded 100 products with enhanced recommendations
+  → Assigned to Set 3
+  → Assigned to Set 3
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Purple Zara Saree | only semantic: 0.2705]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Blue Adidas Kurta | only semantic: 0.3866]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Black Gucci Backpack | only semantic: 0.4363]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Yellow Levis Saree | only semantic: 0.2335]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Pink Adidas Saree | only semantic: 0.4055]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White H&M Shirt | only semantic: 0.2858]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Blue Fossil Scarf | only semantic: 0.3558]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Pink Adidas Sneakers | only semantic: 0.4869]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Purple Gucci Hat | only semantic: 0.3056]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Yellow Puma Heels | only semantic: 0.4574]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Zara Jeans | only semantic: 0.2910]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+  → Assigned to Set 3
+  → Assigned to Set 1
+  → Assigned to Set 3
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Blue H&M Kurta | only semantic: 0.2199]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+  → Assigned to Set 3
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Pink Ray-Ban Watch | only semantic: 0.2479]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Michael Kors Watch | only semantic: 0.2703]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Gucci Jewelry | only semantic: 0.2245]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Black Fossil Sunglasses | only semantic: 0.4204]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Red Ray-Ban Handbag | only semantic: 0.2584]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Ray-Ban Watch | only semantic: 0.2321]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+  → Assigned to Set 3
+  → Assigned to Set 1
+  → Assigned to Set 1
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Grey Tommy Hilfiger Handbag | only semantic: 0.3049]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Ray-Ban Scarf | only semantic: 0.2493]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Puma Slippers | only semantic: 0.4109]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Levis Sweater | only semantic: 0.3425]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Pink Ray-Ban Handbag | only semantic: 0.2659]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Levis Sweater | only semantic: 0.3591]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Reebok Loafers | only semantic: 0.4421]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Yellow Michael Kors Sunglasses | only semantic: 0.1867]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+  → Assigned to Set 1
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Blue Reebok Heels | only semantic: 0.4650]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Michael Kors Watch | only semantic: 0.2932]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Yellow Adidas Jacket | only semantic: 0.3791]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Adidas Dress | only semantic: 0.3806]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Green H&M Skirt | only semantic: 0.2202]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey H&M Saree | only semantic: 0.3004]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+  → Assigned to Set 3
+  → Assigned to Set 3
+  → Assigned to Set 3
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Blue Gucci Belt | only semantic: 0.3031]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Purple Tommy Hilfiger Hat | only semantic: 0.2655]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Green Reebok Sandals | only semantic: 0.4034]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Brown Zara Jeans | only semantic: 0.3070]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Reebok Sneakers | only semantic: 0.4217]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Fossil Handbag | only semantic: 0.2942]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Fossil Handbag | only semantic: 0.2967]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Tommy Hilfiger Jewelry | only semantic: 0.2866]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+  → Assigned to Set 3
+  → Assigned to Set 3
+  → Assigned to Set 1
+  → Assigned to Set 3
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Brown Ray-Ban Belt | only semantic: 0.2870]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Zara Kurta | only semantic: 0.3068]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+  → Assigned to Set 3
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Black Adidas Dress | only semantic: 0.6291]
+  → Assigned to Other Set (0)
+  → Assigned to Set 3
+  → Assigned to Set 3
+  → Assigned to Set 3
+
+[DEBUG: Candidate - Blue Adidas Sandals | only semantic: 0.5500]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Red Fossil Sunglasses | only semantic: 0.3719]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Bata Boots | only semantic: 0.2468]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - White Adidas Boots | only semantic: 0.4676]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Michael Kors Wallet | only semantic: 0.2766]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Black Gucci Backpack | only semantic: 0.3398]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Reebok Sandals | only semantic: 0.2893]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Yellow Zara T-shirt | only semantic: 0.4106]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Adidas Saree | only semantic: 0.4443]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White H&M Shirt | only semantic: 0.4478]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Adidas T-shirt | only semantic: 0.5549]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Blue Fossil Scarf | only semantic: 0.4446]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Black Nike Sandals | only semantic: 0.3246]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Adidas Sneakers | only semantic: 0.3694]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Ray-Ban Sunglasses | only semantic: 0.3100]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Reebok Boots | only semantic: 0.2579]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Purple Gucci Hat | only semantic: 0.2469]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Bata Sandals | only semantic: 0.2047]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Adidas Loafers | only semantic: 0.4863]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Puma Heels | only semantic: 0.2732]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Zara Jeans | only semantic: 0.4196]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Adidas Jacket | only semantic: 0.4034]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Red Nike Shirt | only semantic: 0.4248]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Puma Boots | only semantic: 0.2855]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Adidas Skirt | only semantic: 0.5162]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Red H&M Sweater | only semantic: 0.4662]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - White Nike Heels | only semantic: 0.3246]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Red Nike Sandals | only semantic: 0.3519]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Ray-Ban Watch | only semantic: 0.3911]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Michael Kors Watch | only semantic: 0.3584]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Gucci Jewelry | only semantic: 0.1817]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Black Fossil Sunglasses | only semantic: 0.2678]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Black Nike Running Shoes | only semantic: 0.3425]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Zara T-shirt | only semantic: 0.3970]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Red Ray-Ban Handbag | only semantic: 0.2928]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Ray-Ban Watch | only semantic: 0.4196]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Red Adidas Hoodie | only semantic: 0.4591]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Black Bata Slippers | only semantic: 0.2079]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Nike Slippers | only semantic: 0.3258]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Adidas Skirt | only semantic: 0.4751]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Tommy Hilfiger Handbag | only semantic: 0.3435]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Ray-Ban Scarf | only semantic: 0.3879]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Puma Slippers | only semantic: 0.3127]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Zara Hoodie | only semantic: 0.3355]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Ray-Ban Handbag | only semantic: 0.3285]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Blue Reebok Loafers | only semantic: 0.4141]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Nike Slippers | only semantic: 0.3354]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Michael Kors Sunglasses | only semantic: 0.2496]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Black Bata Running Shoes | only semantic: 0.2317]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Bata Running Shoes | only semantic: 0.2432]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Reebok Heels | only semantic: 0.3887]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Michael Kors Watch | only semantic: 0.2848]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Adidas Jeans | only semantic: 0.5386]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Puma Sandals | only semantic: 0.2209]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Adidas Jacket | only semantic: 0.4823]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Adidas Dress | only semantic: 0.3817]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Bata Running Shoes | only semantic: 0.2410]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Fossil Cap | only semantic: 0.4389]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Brown Nike Kurta | only semantic: 0.3897]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Nike Hoodie | only semantic: 0.4751]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Puma Sneakers | only semantic: 0.4011]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Gucci Backpack | only semantic: 0.2918]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Adidas Running Shoes | only semantic: 0.3744]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Gucci Belt | only semantic: 0.4435]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Purple Tommy Hilfiger Hat | only semantic: 0.4250]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Black Fossil Cap | only semantic: 0.2664]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Reebok Sandals | only semantic: 0.2824]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Brown Zara Jeans | only semantic: 0.3664]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Reebok Sneakers | only semantic: 0.2366]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Fossil Handbag | only semantic: 0.2541]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Fossil Handbag | only semantic: 0.3194]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Tommy Hilfiger Jewelry | only semantic: 0.4358]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Brown Ray-Ban Sunglasses | only semantic: 0.3151]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Gucci Cap | only semantic: 0.3758]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Nike Loafers | only semantic: 0.3459]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Purple Reebok Slippers | only semantic: 0.2557]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Nike Running Shoes | only semantic: 0.3529]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Ray-Ban Belt | only semantic: 0.3355]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Yellow Nike Sneakers | only semantic: 0.3998]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Zara Hoodie | only semantic: 0.4023]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Black Adidas Dress | only semantic: 0.4538]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Zara T-shirt | only semantic: 0.3856]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Purple Fossil Handbag | only semantic: 0.3086]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Zara Hoodie | only semantic: 0.3750]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Adidas Sandals | only semantic: 0.5500]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Red Fossil Sunglasses | only semantic: 0.3719]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Bata Boots | only semantic: 0.2468]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - White Adidas Boots | only semantic: 0.4676]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Michael Kors Wallet | only semantic: 0.2766]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Black Gucci Backpack | only semantic: 0.3398]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Reebok Sandals | only semantic: 0.2893]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Yellow Zara T-shirt | only semantic: 0.4106]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Adidas Saree | only semantic: 0.4443]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White H&M Shirt | only semantic: 0.4478]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Adidas T-shirt | only semantic: 0.5549]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Blue Fossil Scarf | only semantic: 0.4446]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Black Nike Sandals | only semantic: 0.3246]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Adidas Sneakers | only semantic: 0.3694]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Ray-Ban Sunglasses | only semantic: 0.3100]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Reebok Boots | only semantic: 0.2579]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Purple Gucci Hat | only semantic: 0.2469]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Bata Sandals | only semantic: 0.2047]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Adidas Loafers | only semantic: 0.4863]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Puma Heels | only semantic: 0.2732]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Zara Jeans | only semantic: 0.4196]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Adidas Jacket | only semantic: 0.4034]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Red Nike Shirt | only semantic: 0.4248]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Puma Boots | only semantic: 0.2855]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Adidas Skirt | only semantic: 0.5162]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Red H&M Sweater | only semantic: 0.4662]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - White Nike Heels | only semantic: 0.3246]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Red Nike Sandals | only semantic: 0.3519]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Ray-Ban Watch | only semantic: 0.3911]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Michael Kors Watch | only semantic: 0.3584]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Gucci Jewelry | only semantic: 0.1817]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Black Fossil Sunglasses | only semantic: 0.2678]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Black Nike Running Shoes | only semantic: 0.3425]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Zara T-shirt | only semantic: 0.3970]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Red Ray-Ban Handbag | only semantic: 0.2928]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Ray-Ban Watch | only semantic: 0.4196]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Red Adidas Hoodie | only semantic: 0.4591]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Black Bata Slippers | only semantic: 0.2079]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Nike Slippers | only semantic: 0.3258]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Adidas Skirt | only semantic: 0.4751]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Tommy Hilfiger Handbag | only semantic: 0.3435]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Ray-Ban Scarf | only semantic: 0.3879]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Puma Slippers | only semantic: 0.3127]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Zara Hoodie | only semantic: 0.3355]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Ray-Ban Handbag | only semantic: 0.3285]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Blue Reebok Loafers | only semantic: 0.4141]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Nike Slippers | only semantic: 0.3354]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Michael Kors Sunglasses | only semantic: 0.2496]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Black Bata Running Shoes | only semantic: 0.2317]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Bata Running Shoes | only semantic: 0.2432]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Reebok Heels | only semantic: 0.3887]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Michael Kors Watch | only semantic: 0.2848]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Adidas Jeans | only semantic: 0.5386]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Puma Sandals | only semantic: 0.2209]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Adidas Jacket | only semantic: 0.4823]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Adidas Dress | only semantic: 0.3817]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Bata Running Shoes | only semantic: 0.2410]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Fossil Cap | only semantic: 0.4389]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Brown Nike Kurta | only semantic: 0.3897]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Nike Hoodie | only semantic: 0.4751]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Puma Sneakers | only semantic: 0.4011]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Gucci Backpack | only semantic: 0.2918]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Adidas Running Shoes | only semantic: 0.3744]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Blue Gucci Belt | only semantic: 0.4435]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Purple Tommy Hilfiger Hat | only semantic: 0.4250]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Black Fossil Cap | only semantic: 0.2664]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Green Reebok Sandals | only semantic: 0.2824]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Brown Zara Jeans | only semantic: 0.3664]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Reebok Sneakers | only semantic: 0.2366]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Fossil Handbag | only semantic: 0.2541]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Fossil Handbag | only semantic: 0.3194]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Tommy Hilfiger Jewelry | only semantic: 0.4358]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Brown Ray-Ban Sunglasses | only semantic: 0.3151]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Grey Gucci Cap | only semantic: 0.3758]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - White Nike Loafers | only semantic: 0.3459]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Purple Reebok Slippers | only semantic: 0.2557]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Yellow Nike Running Shoes | only semantic: 0.3529]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Ray-Ban Belt | only semantic: 0.3355]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Yellow Nike Sneakers | only semantic: 0.3998]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Zara Hoodie | only semantic: 0.4023]
+  → Assigned to Other Set (0)
+  → Assigned to Set 1
+
+[DEBUG: Candidate - Black Adidas Dress | only semantic: 0.4538]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Brown Zara T-shirt | only semantic: 0.3856]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Purple Fossil Handbag | only semantic: 0.3086]
+  → Assigned to Other Set (0)
+
+[DEBUG: Candidate - Pink Zara Hoodie | only semantic: 0.3750]
+  → Assigned to Other Set (0)

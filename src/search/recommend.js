@@ -1,6 +1,7 @@
 // src/search/recommend.js
 import { cosineSimilarity } from '../utils/similarity.js';
 import { rankProducts, getContextualWeights } from '../utils/recommendation_scorer.js';
+import { heuristicRecommend, heuristicRecommendWithCustomWeights, analyzeRecommendationSets } from './heuristic_recommend.js';
 
 /**
  * Enhanced recommendation system with multi-factor scoring
@@ -103,6 +104,63 @@ export function recommendWithinBudget(products, productId, budget, options = {})
     purpose: 'budget',
     context: { budget }
   });
+}
+
+/**
+ * Heuristic Rule-Based Expansion recommendations with tiered sets
+ * @param {Array} products - All available products
+ * @param {string} productId - Base product ID
+ * @param {Object} options - Heuristic recommendation options
+ * @returns {Array} - Tiered recommendations with set information
+ */
+export function recommendHeuristic(products, productId, options = {}) {
+  return heuristicRecommend(products, productId, options);
+}
+
+/**
+ * Heuristic recommendations with custom weight tuning
+ * @param {Array} products - All available products
+ * @param {string} productId - Base product ID
+ * @param {Object} customWeights - Custom weights for different sets
+ * @param {Object} options - Additional options
+ * @returns {Array} - Recommendations with custom weighting
+ */
+export function recommendHeuristicCustom(products, productId, customWeights, options = {}) {
+  return heuristicRecommendWithCustomWeights(products, productId, customWeights, options);
+}
+
+/**
+ * Analyze how products would be distributed across recommendation sets
+ * @param {Array} products - All available products
+ * @param {string} productId - Base product ID
+ * @returns {Object} - Analysis of set distribution
+ */
+export function analyzeProductSets(products, productId) {
+  return analyzeRecommendationSets(products, productId);
+}
+
+/**
+ * Master recommendation function that can use different algorithms
+ * @param {Array} products - All available products
+ * @param {string} productId - Base product ID
+ * @param {Object} options - Comprehensive recommendation options
+ * @returns {Array|Object} - Recommendations based on selected algorithm
+ */
+export function recommendMaster(products, productId, options = {}) {
+  const {
+    algorithm = 'advanced', // 'advanced', 'heuristic', 'legacy'
+    ...restOptions
+  } = options;
+  
+  switch (algorithm) {
+    case 'heuristic':
+      return recommendHeuristic(products, productId, restOptions);
+    case 'legacy':
+      return recommendSimilarLegacy(products, productId, restOptions.topK || 5);
+    case 'advanced':
+    default:
+      return recommendSimilar(products, productId, restOptions);
+  }
 }
 
 // Legacy function for backward compatibility
