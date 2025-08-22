@@ -6,7 +6,7 @@ import Papa from 'papaparse';
 
 // Test the heuristic recommendation API
 async function testHeuristicRecommendations() {
-  const baseUrl = 'https://retail-js.onrender.com';
+  const baseUrl = 'https://retail-js.vercel.app/';
   
   try {
     // Read the CSV to get some sample product IDs
@@ -113,7 +113,7 @@ async function testHeuristicRecommendations() {
 // Run the test if server is available
 async function checkServerAndTest() {
   try {
-    const response = await fetch('https://retail-js.onrender.com/');
+    const response = await fetch('https://retail-js.vercel.app//');
     if (response.ok) {
       await testHeuristicRecommendations();
     } else {

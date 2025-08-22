@@ -1,6 +1,6 @@
 class FashionSearchApp {
     constructor() {
-        this.API_BASE = 'https://retail-js.onrender.com';
+        this.API_BASE = 'https://retail-js.vercel.app/';
         this.currentQuery = '';
         this.searchResults = [];
         
